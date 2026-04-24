@@ -33,10 +33,14 @@ RUNNING THE APPLICATION USING THE SHORTCUT FILES ACROSS DIFFERENT PLATFORMS
 To avoid having to run all of the commands above, shortcut files for macOS, Windows, and Linux have been included in the main SimpleStudyCards_v1.0.1 folder that run the Python script for you. Follow the steps below to use the shortcut files to run the Simple Study Cards program. Note that these shortcut files still require the latest version of Python to be installed to run the Simple Study Cards program.
 
 MACOS:
-The macOS Terminal requires that you have permissions to run a .command file. The below steps make the .command file executable.
+The macOS Terminal requires that the .command file be made executable and that your user has permissions to run it. Additionally, since the .command file is not from the Mac App Store, macOS may block it from running. Run the commands below to allow it to run:
 	- Open the Terminal
 	- Type: chmod +x 
 		- Leave a space after 'x', and do not press enter
+	- Drag the 'for_macOS.command' file to the Terminal window
+	- Press enter
+	- Type: xattr -d com.apple.quarantine 
+		- Leave a space after 'quarantine', and do not press enter
 	- Drag the 'for_macOS.command' file to the Terminal window
 	- Press enter
 You may now double-click the 'for_macOS.command' file to run the Simple Study Cards program.
